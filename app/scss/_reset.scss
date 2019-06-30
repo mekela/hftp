@@ -304,5 +304,7 @@ textarea{
 //main containers
 .wrapper{
 @include povh('');
+min-height: 100vh;
+  background: url(../img/top-bg.png) no-repeat center top;
 }
 

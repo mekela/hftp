@@ -359,23 +359,241 @@ textarea {
 
 .wrapper {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: 100vh;
+  background: url(../img/top-bg.png) no-repeat center top; }
 
 /*----------header----------*/
 .header {
   position: relative;
+  overflow: hidden;
+  padding: 20px 0 0 0; }
+
+.search {
+  position: relative;
   overflow: hidden; }
+  .search input {
+    width: 100%;
+    color: #383838;
+    font-size: 16px;
+    height: 48px;
+    padding: 0 25px;
+    border: 1px solid #bfbfbf;
+    border-radius: 22px; }
+
+.header__buttons {
+  text-align: right; }
+  .header__buttons .button {
+    border-radius: 6px;
+    border: 1px solid #fff;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    background: none;
+    padding: 8px 15px;
+    margin-left: 15px; }
+    .header__buttons .button.inverted {
+      color: #83c56d;
+      background: #fff;
+      border-color: #46b691; }
+
+.header__menu {
+  margin-top: 15px; }
+  .header__menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__menu ul li {
+      position: relative; }
+      .header__menu ul li:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -6.5px;
+        left: -3.5px;
+        width: 1px;
+        height: 13px;
+        background: #c4c4c4; }
+      .header__menu ul li:hover a, .header__menu ul li.active a {
+        background: #fff;
+        border-color: #82c56e; }
+      .header__menu ul li:hover:before, .header__menu ul li.active:before {
+        opacity: 0; }
+      .header__menu ul li:hover + li:before, .header__menu ul li.active + li:before {
+        opacity: 0; }
+      .header__menu ul li:first-child:before {
+        opacity: 0; }
+    .header__menu ul a {
+      font-size: 18px;
+      color: #323232;
+      display: inline-block;
+      position: relative;
+      padding: 10px 20px;
+      border-radius: 3px;
+      border: 1px solid transparent;
+      text-decoration: none; }
+      @media only screen and (max-width: 1200px) {
+        .header__menu ul a {
+          font-size: 14px; } }
+      @media only screen and (max-width: 992px) {
+        .header__menu ul a {
+          padding: 5px; } }
 
 /*----------end-header----------*/
 /*----------main----------*/
 .main {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 80px 0 0 0; }
+
+.bnr {
+  margin-bottom: 50px; }
+  .bnr h1 {
+    color: #222222;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    line-height: 1.2;
+    padding-bottom: 45px; }
+  .bnr__buttons div {
+    padding-bottom: 20px; }
+  .bnr__buttons a.button {
+    border-radius: 6px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 255px;
+    text-align: left;
+    background-image: linear-gradient(to right, #eeaa54, #ee7623); }
+    .bnr__buttons a.button img {
+      vertical-align: middle;
+      padding-right: 12px; }
+  .bnr__img {
+    position: relative;
+    margin-top: -76px;
+    margin-left: -184px; }
+    @media only screen and (max-width: 1200px) {
+      .bnr__img {
+        margin-left: 0;
+        margin-top: 0; } }
+
+.about-text {
+  text-align: center;
+  font-size: 24px;
+  color: #2f3e4d;
+  font-weight: 300;
+  padding-bottom: 58px; }
+  .about-text p {
+    padding-bottom: 30px; }
+    .about-text p a:not(.button) {
+      color: #00b2e2; }
+
+.tags figure {
+  padding: 35px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 13px; }
+  .tags figure img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px; }
+  .tags figure figcaption {
+    border-top: 4px solid #8bbc40;
+    padding-top: 25px;
+    font-size: 16px;
+    color: #4b4b4b; }
+    .tags figure figcaption a {
+      color: #63b96f;
+      text-decoration: none; }
+      .tags figure figcaption a:hover {
+        text-decoration: underline; }
+
+.title {
+  font-size: 42px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: 1.4;
+  font-weight: 600; }
+  .title img {
+    padding-right: 25px; }
+
+.news-logos__inner {
+  background: url(../img/logos-bg.png) no-repeat left 27px top;
+  padding-top: 30px; }
+  @media only screen and (max-width: 1200px) {
+    .news-logos__inner {
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-position: top center; } }
+  .news-logos__inner a {
+    display: block;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    padding: 10px; }
+    .news-logos__inner a img {
+      display: block;
+      margin: 0 auto; }
+
+.news-logos .col-lg-2:first-child, .news-logos .col-lg-2:last-child {
+  margin-top: 120px; }
+
+.news-logos .col-lg-2:nth-child(2), .news-logos .col-lg-2:nth-child(5) {
+  margin-top: 185px; }
+
+.news-logos .col-lg-2:nth-child(3), .news-logos .col-lg-2:nth-child(4) {
+  margin-top: 200px; }
 
 /*----------end main----------*/
 /*----------footer----------*/
 .footer {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 180px 0 40px 0;
+  background: url(../img/footer-bg.jpg) no-repeat center top; }
+  .footer__menu {
+    padding-bottom: 30px; }
+    .footer__menu ul {
+      display: flex;
+      justify-content: space-between;
+      color: #000000;
+      font-size: 14px;
+      text-transform: uppercase; }
+      .footer__menu ul a {
+        text-decoration: none; }
+        .footer__menu ul a:hover {
+          text-decoration: underline; }
+  .footer address {
+    color: #383838;
+    font-size: 13px;
+    font-style: normal;
+    text-align: justify; }
+
+.social {
+  display: flex; }
+  .social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 15px;
+    font-size: 26px;
+    color: #466fc2;
+    border: 1px solid #bfbfbf; }
+    .social a .fa-twitter {
+      color: #06afe2; }
+    .social a .fa-linkedin-in {
+      color: #007aaa; }
+    .social a .fa-skype {
+      color: #00aaf2; }
+    .social a .fa-blogger-b {
+      color: #f89029; }
 
 /*----------end footer----------*/
+@media only screen and (max-width: 1200px) {
+  img {
+    max-width: 100%; } }

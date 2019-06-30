@@ -21,18 +21,20 @@
   <div class="header__info">
     <div class="container">
       <div class="row align-items-center justify-content-between">
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-3">
           <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4">
           <form action="#" class="search">
             <input type="text" placeholder="Search...">
             <button><i class="fas fa-search"></i></button>
           </form>
         </div>
-        <div class="col-lg-4">
-          <a href="#" class="button"><i class="fas fa-sign-in-alt"></i>Login</a>
-          <a href="#" class="button"><i class="fas fa-file-signature"></i>Create account</a>
+        <div class="col-lg-4 col-md-5">
+         <nav class="header__buttons">
+           <a href="#" class="button inverted"><i class="fas fa-sign-in-alt"></i>Login</a>
+           <a href="#" class="button"><i class="fas fa-file-signature"></i>Create account</a>
+         </nav>
         </div>
       </div>
     </div>
@@ -67,13 +69,13 @@
                 <h1>WELCOME TO THE HFTP 
                         SOUTH FLORIDA CHAPTER</h1>
                 <div class="bnr__buttons">
-                    <a href="#" class="button"><img src="img/global.png" alt=""><span>HFTP GLOBAL</span></a>
-                    <a href="#" class="button"><img src="img/development.png" alt=""><span>CAREER CENTER</span></a>
-                    <a href="#" class="button"><img src="img/unlink.png" alt=""><span>JOIN HFTP</span></a>
+                    <div><a href="#" class="button"><img src="img/global.png" alt=""><span>HFTP GLOBAL</span></a></div>
+                    <div><a href="#" class="button"><img src="img/development.png" alt=""><span>CAREER CENTER</span></a></div>
+                    <div><a href="#" class="button"><img src="img/unlink.png" alt=""><span>JOIN HFTP</span></a></div>
                 </div>
             </div>
             <div class="col-lg-6">
-                <img src="img/top-img.png" alt="">
+                <img src="img/top-img.png" alt="" class="bnr__img">
             </div>
         </div>
     </div>
@@ -113,8 +115,8 @@
 <!-- news -->
 <div class="news-logos">
     <div class="container">
-        <h2 class="title"><img src="img/plant.png" alt=""> News and Information 
-                You Can Use</h2>
+        <h2 class="title"><img src="img/plant.png" alt=""> <span>News and Information
+            <br>    You Can Use</span></h2>
         <div class="news-logos__inner">
             <div class="row">
                 <div class="col-lg-2"><a href="#"><img src="img/info-logo1.png" alt=""></a></div>
@@ -161,7 +163,7 @@
         </div>
         <div class="col-lg-4">
           <form action="#" class="search">
-            <input type="text" placeholder="Search...">
+            <input type="text" >
             <button><i class="fas fa-search"></i></button>
           </form>
         </div>
