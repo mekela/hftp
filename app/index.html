@@ -14,27 +14,30 @@
   <link rel="stylesheet" href="css/styles.css">
   <!--endbuild-->
 </head>
-<body>
+<body  >
 <div class="wrapper">
 <!--header-->
 <header class="header">
   <div class="header__info">
     <div class="container">
       <div class="row align-items-center justify-content-between">
-        <div class="col-lg-3 col-md-3">
+        <div class="col-lg-3 col-md-3 col-5">
           <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
         </div>
-        <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4 col-5">
           <form action="#" class="search">
             <input type="text" placeholder="Search...">
             <button><i class="fas fa-search"></i></button>
           </form>
         </div>
-        <div class="col-lg-4 col-md-5">
+        <div class="col-lg-4 col-md-5 col-2">
          <nav class="header__buttons">
            <a href="#" class="button inverted"><i class="fas fa-sign-in-alt"></i>Login</a>
            <a href="#" class="button"><i class="fas fa-file-signature"></i>Create account</a>
          </nav>
+         <button class="menu-trigger">
+          <i class="fas fa-bars"></i>
+         </button>
         </div>
       </div>
     </div>
@@ -52,14 +55,18 @@
         <li><a href="#">Contact		</a></li>
         <li><a href="#">Photo Gallery</a></li>
       </ul>
+      <nav class="header__buttons">
+        <a href="#" class="button inverted"><i class="fas fa-sign-in-alt"></i>Login</a>
+        <a href="#" class="button"><i class="fas fa-file-signature"></i>Create account</a>
+      </nav>
     </div>
   </nav>
+  <div class="menu-overlay"></div>
 </header>
 <!--end-header-->
 <!--main-->
 <div class="main">
 
-  <div class="container">
    
 <!-- banner -->
 <div class="bnr">
@@ -119,19 +126,18 @@
             <br>    You Can Use</span></h2>
         <div class="news-logos__inner">
             <div class="row">
-                <div class="col-lg-2"><a href="#"><img src="img/info-logo1.png" alt=""></a></div>
-                <div class="col-lg-2"><a href="#"><img src="img/info-logo2.png" alt=""></a></div>
-                <div class="col-lg-2"><a href="#"><img src="img/info-logo3.png" alt=""></a></div>
-                <div class="col-lg-2"><a href="#"><img src="img/info-logo4.png" alt=""></a></div>
-                <div class="col-lg-2"><a href="#"><img src="img/info-logo5.png" alt=""></a></div>
-                <div class="col-lg-2"><a href="#"><img src="img/info-logo6.png" alt=""></a></div>
+                <div class="col-lg-2 col-md-6"><a href="#"><img src="img/info-logo1.png" alt=""></a></div>
+                <div class="col-lg-2 col-md-6"><a href="#"><img src="img/info-logo2.png" alt=""></a></div>
+                <div class="col-lg-2 col-md-6"><a href="#"><img src="img/info-logo3.png" alt=""></a></div>
+                <div class="col-lg-2 col-md-6"><a href="#"><img src="img/info-logo4.png" alt=""></a></div>
+                <div class="col-lg-2 col-md-6"><a href="#"><img src="img/info-logo5.png" alt=""></a></div>
+                <div class="col-lg-2 col-md-6"><a href="#"><img src="img/info-logo6.png" alt=""></a></div>
             </div>
         </div>
     </div>
 </div>
 <!-- /news -->
 
-  </div>
 
 </div>
 <!--end-main-->
@@ -153,21 +159,14 @@
     </nav>
     <div class="footer__info">
       <div class="row">
-        <div class="col-lg-4">
-          <address>
-              © 2014 Hospitality Financial and Technology Professionals, 
-              HFTP®, HITEC® and GUESTROOM 20X® are registered service 
-              marks of Hospitality Financial and Technology Professionals. 
-              Legal
-          </address>
-        </div>
-        <div class="col-lg-4">
+        
+        <div class="col-lg-4 order-lg-1">
           <form action="#" class="search">
             <input type="text" >
             <button><i class="fas fa-search"></i></button>
           </form>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 order-lg-1">
           <nav class="social">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -175,6 +174,14 @@
             <a href="#"><i class="fab fa-skype"></i></a>
             <a href="#"><i class="fab fa-blogger-b"></i></a>
           </nav>
+        </div>
+        <div class="col-lg-4">
+          <address>
+              © 2014 Hospitality Financial and Technology Professionals, 
+              HFTP®, HITEC® and GUESTROOM 20X® are registered service 
+              marks of Hospitality Financial and Technology Professionals. 
+              Legal
+          </address>
         </div>
       </div>
     </div>

@@ -224,6 +224,22 @@ body {
     size: 12px;
   };
   line-height: 1.4;
+  &.inner-page{
+    @include mq($min-width: 767px) {
+      .header__menu{
+        background: #eeeeee;
+        padding-bottom: 3px;
+        padding-top: 3px;
+      }
+    }
+    .main{
+      background: #ffffff;
+      padding-top: 60px;
+    }
+    .header__info{
+      padding-bottom: 10px;
+    }
+  }
 }
 nav{
   ul, ol{
@@ -306,5 +322,8 @@ textarea{
 @include povh('');
 min-height: 100vh;
   background: url(../img/top-bg.png) no-repeat center top;
+  @include mq($min-width: 1920px) {
+    background-size: 100% 900px;
+  }
 }
 
