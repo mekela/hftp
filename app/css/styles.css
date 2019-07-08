@@ -491,6 +491,10 @@ textarea {
     .wrapper {
       background-size: 100% 900px; } }
 
+@media only screen and (min-width: 992px) {
+  .wrapper-bg-small .wrapper {
+    background-size: contain; } }
+
 /*----------header----------*/
 .header {
   position: relative;
@@ -682,13 +686,24 @@ textarea {
 .main {
   position: relative;
   overflow: hidden;
-  padding: 80px 0 0 0; }
+  padding: 80px 0 0 0;
+  min-height: 90vh; }
 
 .bnr {
   margin-bottom: 50px; }
   @media only screen and (max-width: 992px) {
     .bnr {
       text-align: center; } }
+  .bnr p {
+    color: #222222;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    padding-bottom: 30px; }
+    @media only screen and (max-width: 767px) {
+      .bnr p {
+        font-size: 16px;
+        padding-bottom: 15px; } }
   .bnr h1 {
     color: #222222;
     font-size: 42px;
@@ -755,6 +770,18 @@ textarea {
         margin-top: 0; } }
     @media only screen and (max-width: 992px) {
       .bnr__img {
+        display: none; } }
+    .bnr__img.bnr__img-no-spacing {
+      margin: 0; }
+  .bnr__img-thanks {
+    margin-left: -80px;
+    margin-top: -45px; }
+    @media only screen and (max-width: 1200px) {
+      .bnr__img-thanks {
+        margin-left: 0;
+        margin-top: 0; } }
+    @media only screen and (max-width: 992px) {
+      .bnr__img-thanks {
         display: none; } }
   .bnr__img-form {
     margin-top: -30px; }
@@ -923,6 +950,24 @@ textarea {
     @media only screen and (max-width: 575px) {
       .card__img img {
         margin: 0 auto 20px auto; } }
+
+.content-text {
+  color: #222222;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 40px 0; }
+  @media only screen and (max-width: 767px) {
+    .content-text {
+      font-size: 14px; } }
+  .content-text p {
+    padding-bottom: 20px; }
+    @media only screen and (max-width: 767px) {
+      .content-text p {
+        padding-bottom: 10px; } }
+  .content-text a {
+    color: #62bc7c;
+    letter-spacing: 0.5px; }
 
 /*----------end main----------*/
 /*----------footer----------*/

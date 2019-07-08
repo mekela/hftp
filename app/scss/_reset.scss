@@ -326,4 +326,11 @@ min-height: 100vh;
     background-size: 100% 900px;
   }
 }
+.wrapper-bg-small{
+  .wrapper{
+    @include mq($min-width: 992px) {
+      background-size: contain;
+    }
+  }
+}
 
