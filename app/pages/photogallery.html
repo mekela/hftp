@@ -1,0 +1,52 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+{% block bodyclass %} class="inner-page" {% endblock %}
+{% block content %}
+<!-- title -->
+<div class="container">
+    <div class="title">
+        <h1>Photo Gallery</h1>
+    </div>
+</div>
+<!-- /title -->
+<!-- gallery -->
+<div class="container gallery">
+    <div class="row">
+        <div class="col-sm-8 col-lg-9">
+            <div class="gallery__section">
+                <div class="row">
+                    <div class="col-md-8"><a data-fancybox="gallery" href="img/gallery1.jpg"><img src="img/gallery1.jpg" alt=""></a></div>
+                    <div class="col-md-4"><a data-fancybox="gallery" href="img/gallery2.png"><img src="img/gallery2.png" alt=""></a></div>
+                    <div class="col-md-4"><a data-fancybox="gallery" href="img/gallery3.png"><img src="img/gallery3.png" alt=""></a></div>
+                    <div class="col-md-4"><a data-fancybox="gallery" href="img/gallery3.png"><img src="img/gallery3.png" alt=""></a></div>
+                    <div class="col-md-4"><a data-fancybox="gallery" href="img/gallery3.png"><img src="img/gallery3.png" alt=""></a></div>
+                    <div class="col-md-4"><a data-fancybox="gallery" href="img/gallery3.png"><img src="img/gallery3.png" alt=""></a></div>
+                    <div class="col-md-4"><a data-fancybox="gallery" href="img/gallery3.png"><img src="img/gallery3.png" alt=""></a></div>
+                    <div class="col-md-4"><a data-fancybox="gallery" href="img/gallery3.png"><img src="img/gallery3.png" alt=""></a></div>
+                    <div class="col-md-4"><a data-fancybox="gallery" href="img/gallery3.png"><img src="img/gallery3.png" alt=""></a></div>
+                    <div class="col-md-4"><a data-fancybox="gallery" href="img/gallery3.png"><img src="img/gallery3.png" alt=""></a></div>
+                    <div class="col-md-4"><a data-fancybox="gallery" href="img/gallery3.png"><img src="img/gallery3.png" alt=""></a></div>
+                </div>
+            </div>
+            <div class="more"><a href="#" class="button"><span>SEE MORE</span></a></div>
+        </div>
+        <div class="col-lg-3 col-sm-4">
+            <aside class="sidebar">
+                <nav class="sidebar__links">
+                    <ul>
+                        <li><a href="#" class="active">Events</a></li>
+                        <li><a href="#">Prolinks webinars</a></li>
+                        <li><a href="#">Prolinks webinars</a></li>
+                        <li><a href="#">Prolinks webinars</a></li>
+                        <li><a href="#">Prolinks webinars</a></li>
+                        <li><a href="#">Prolinks webinars</a></li>
+                        <li><a href="#">Prolinks webinars</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+    </div>
+</div>
+<!-- /gallery -->
+
+{% endblock %}
