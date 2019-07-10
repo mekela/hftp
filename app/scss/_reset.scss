@@ -333,4 +333,10 @@ min-height: 100vh;
     }
   }
 }
-
+.contact-page{
+  .wrapper{
+    @include mq($min-width: 992px) {
+      background-size: auto 1040px;
+    }
+  }
+}

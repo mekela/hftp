@@ -495,6 +495,10 @@ textarea {
   .wrapper-bg-small .wrapper {
     background-size: contain; } }
 
+@media only screen and (min-width: 992px) {
+  .contact-page .wrapper {
+    background-size: auto 1040px; } }
+
 /*----------header----------*/
 .header {
   position: relative;
@@ -719,6 +723,8 @@ textarea {
     @media only screen and (max-width: 767px) {
       .bnr h1 {
         font-size: 24px; } }
+  .bnr .title {
+    margin-bottom: 40px; }
   .bnr__form input {
     width: 373px;
     height: 58px;
@@ -968,6 +974,8 @@ textarea {
   font-weight: 300;
   line-height: 30px;
   padding: 40px 0; }
+  .content-text .title {
+    margin-bottom: 40px; }
   @media only screen and (max-width: 767px) {
     .content-text {
       font-size: 14px; } }
@@ -979,6 +987,23 @@ textarea {
   .content-text a {
     color: #62bc7c;
     letter-spacing: 0.5px; }
+  .content-text ul {
+    padding-bottom: 20px;
+    list-style: none; }
+    .content-text ul li {
+      display: block;
+      position: relative;
+      padding-left: 20px; }
+      .content-text ul li:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 6px;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 6px 0 6px 9px;
+        border-color: transparent transparent transparent #ee7e2b; }
 
 .gallery {
   padding-top: 40px; }
@@ -1085,6 +1110,45 @@ textarea {
       .certification__logos figure img {
         max-width: 100%;
         display: block; }
+
+.contact-info ul.contact-info__list {
+  padding-bottom: 0; }
+  .contact-info ul.contact-info__list li {
+    padding-left: 25px; }
+    .contact-info ul.contact-info__list li:before {
+      display: none; }
+
+.contact-info .certification__text {
+  padding: 15px 13px; }
+
+.contact-info h6 {
+  padding-bottom: 20px; }
+
+.contact-info .certification__inner {
+  border-radius: 2px;
+  border-width: 2px;
+  min-height: 100%;
+  width: 100%; }
+
+.contact-info .certification__item {
+  margin-bottom: 25px;
+  min-height: calc(100% - 25px);
+  display: flex; }
+
+.contact-info__list {
+  color: #222222;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300; }
+  .contact-info__list i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: #7dc470; }
+    .contact-info__list i.fa-map-marker-alt {
+      color: #ee822f; }
+    .contact-info__list i.fa-skype {
+      color: #00b2e2; }
 
 /*----------end main----------*/
 /*----------footer----------*/
