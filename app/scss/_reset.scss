@@ -272,7 +272,7 @@ h6{font-size:14px;}
     @include button_gradient_hover('');
   }
 }
-input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea{
+input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea, select{
    @include input('');
    &:focus{
      @include input_focus('');
@@ -289,6 +289,14 @@ textarea:-moz-placeholder {color: inherit;}
 textarea{
   height: 90px;
   padding-top: 5px;
+}
+select{
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    padding-right: 30px;
+    background: #fff url(../img/select-arrow.png) no-repeat center right 20px;
 }
 //end buttons inputs
 
@@ -340,3 +348,9 @@ min-height: 100vh;
     }
   }
 }
+.inner-page.event-page, .event-page{
+  .main{
+   padding-top: 0;
+   margin-top: 0;
+  }
+} 
