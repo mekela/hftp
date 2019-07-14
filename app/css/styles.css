@@ -179,6 +179,13 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */ }
 
+a {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s; }
+
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -426,7 +433,36 @@ select {
   background: #fff url(../img/select-arrow.png) no-repeat center right 20px; }
 
 .modal {
-  display: none; }
+  display: none;
+  border-radius: 20px;
+  padding: 25px; }
+  .modal h6 {
+    font-size: 30px;
+    color: #303030;
+    padding-bottom: 30px;
+    font-weight: 600;
+    text-align: center; }
+  .modal input {
+    width: 370px;
+    max-width: 100%; }
+  .modal__form-item {
+    padding-bottom: 15px; }
+    .modal__form-item:last-child {
+      padding-bottom: 0; }
+  .modal__logo {
+    display: block;
+    padding-bottom: 20px; }
+    .modal__logo img {
+      max-width: 180px; }
+  .modal .button {
+    min-width: 180px; }
+  .modal p {
+    color: #222222;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5; }
+    .modal p a {
+      color: #62bc7c; }
 
 .clear {
   clear: both;
@@ -512,6 +548,12 @@ select {
 .inner-page.event-page .main, .event-page .main {
   padding-top: 0;
   margin-top: 0; }
+
+.fancybox-is-open .fancybox-bg {
+  opacity: 0.44; }
+
+.fancybox-close-small svg {
+  color: #ee7724; }
 
 /*----------header----------*/
 .header {
@@ -1211,6 +1253,11 @@ select {
     .events-tab-link {
       padding-bottom: 20px; } }
 
+.events-tab {
+  display: none; }
+  .events-tab.active {
+    display: block; }
+
 .event-sidebar {
   padding-bottom: 30px; }
   .event-sidebar__nav a {
@@ -1256,6 +1303,46 @@ select {
       border-width: 6.5px 0 6.5px 10px;
       border-color: transparent transparent transparent #fff; }
 
+.event-inner-sidebar__nav a {
+  padding-left: 15px; }
+  .event-inner-sidebar__nav a::before {
+    display: none; }
+
+.event-inner-sidebar__nav ol {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: #eeeeee;
+  margin-bottom: 3px;
+  padding: 20px 0;
+  margin-top: -3px;
+  display: none; }
+  .event-inner-sidebar__nav ol a {
+    background: none;
+    border: none;
+    padding: 5px 20px 4px 34px;
+    font-size: 14px; }
+    .event-inner-sidebar__nav ol a:before {
+      display: block;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 5px 0 5px 7px;
+      border-color: transparent transparent transparent #5c5c5c;
+      transform: none;
+      top: 6px;
+      left: 20px; }
+    .event-inner-sidebar__nav ol a:hover:before {
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 5px 0 5px 7px;
+      border-color: transparent transparent transparent #fff; }
+  .event-inner-sidebar__nav ol li.active a:before {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5px 0 5px 7px;
+    border-color: transparent transparent transparent #fff; }
+
 .events__item {
   padding: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.29);
@@ -1297,6 +1384,62 @@ select {
     padding-right: 8px; }
   .events__item-info span {
     padding-right: 10px; }
+
+.events-text {
+  color: #383838;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.4px; }
+  .events-text h1, .events-text h2, .events-text h3, .events-text h4, .events-text h5, .events-text h6 {
+    color: #2d2d2d;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.45px;
+    padding-bottom: 20px; }
+  .events-text p {
+    padding-bottom: 20px; }
+    .events-text p a {
+      color: #9fce3d;
+      text-decoration: none; }
+      .events-text p a:hover {
+        text-decoration: underline; }
+
+.events-img {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-bottom: 38px; }
+
+.events-text__nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  padding-bottom: 25px; }
+  .events-text__nav a {
+    display: inline-block;
+    padding: 20px 37px;
+    color: #ee7724;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(236, 130, 56, 0.31);
+    border: 1px solid #ee7623;
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-bottom: 14px;
+    text-decoration: none;
+    margin-left: 20px; }
+    @media only screen and (max-width: 767px) {
+      .events-text__nav a {
+        padding: 0.7em 1em;
+        font-size: 14px;
+        margin-bottom: 0.7em;
+        margin-left: 10px; } }
+    .events-text__nav a:hover {
+      background: #ee7724;
+      color: #fff; }
+  @media only screen and (max-width: 767px) {
+    .events-text__nav {
+      margin-left: -10px; } }
 
 /*----------end main----------*/
 /*----------footer----------*/

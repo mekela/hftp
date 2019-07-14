@@ -8,6 +8,8 @@
   <title>title</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="icon" type="image/ico"   href="img/favicon.ico">
+  <link rel="icon" type="image/ico" sizes="16x16" href="img/favicon16.ico">
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body  class="contact-page" >
@@ -28,7 +30,7 @@
         </div>
         <div class="col-lg-4 col-md-5 col-2">
          <nav class="header__buttons">
-           <a href="#" class="button inverted"><i class="fas fa-sign-in-alt"></i>Login</a>
+           <a data-fancybox="" data-src="#login" href="javascript:;" class="button inverted"><i class="fas fa-sign-in-alt"></i>Login</a>
            <a href="#" class="button"><i class="fas fa-file-signature"></i>Create account</a>
          </nav>
          <button class="menu-trigger">
@@ -79,7 +81,7 @@
                         Are you looking to get involved in your membership on a deeper level?</p>
                 </article>
                 <div class="bnr__buttons">
-                    <div><a href="#" class="button text_center"><span>get involved</span></a></div>
+                    <div><a data-fancybox="" data-src="#get" href="javascript:;" class="button text_center"><span>get involved</span></a></div>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -332,7 +334,34 @@
 </footer>
 <!--end-footer-->
 </div>
-
+<!-- modal -->
+<div class="modal" id="get">
+  <div class="modal__inner">
+    <h6> Leave information</h6>
+    <form action="#" class="modal__form">
+      <div class="modal__form-item"><input type="text" placeholder="Name"></div>
+      <div class="modal__form-item"><input type="text" placeholder="Company"></div>
+      <div class="modal__form-item"><input type="tel" placeholder="Phone"></div>
+      <div class="modal__form-item"><input type="email" placeholder="Email"></div>
+      <div class="modal__form-item text_center"><button class="button"><span>Get involved</span></button></div>
+    </form>
+  </div>
+</div>
+<div class="modal" id="login">
+  <div class="modal__inner">
+    <div class="modal__logo"><a href="/"><img src="img/logo.png" alt=""></a></div>
+    <form action="#" class="modal__form">
+      <div class="modal__form-item"><input type="text" placeholder="Username"></div>
+      <div class="modal__form-item"><input type="password" placeholder="Password"></div>
+      <div class="modal__form-item"><button class="button"><span>Log in</span></button></div>
+      <p>
+        <a href="#">Forgot password?</a> <br>
+        Not a customer? <a href="#">Register</a>
+      </p>
+    </form>
+  </div>
+</div>
+<!-- /modal -->
 <!--SCRIPT -->
 <script src="js/jquery.js"></script> 
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>

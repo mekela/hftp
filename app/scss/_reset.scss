@@ -77,6 +77,9 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+a{
+  @include transition(all 0.5s);
+}
 
 abbr[title] {
   border-bottom: none; /* 1 */
@@ -302,6 +305,45 @@ select{
 
 .modal{
   display: none;
+  border-radius: 20px;
+  padding: 25px;
+  h6{
+    font-size: 30px;
+    color: #303030;
+    padding-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+  }
+  input{
+    width: 370px;
+    max-width: 100%;
+  }
+  &__form-item{
+    padding-bottom: 15px;
+   // text-align: center;
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
+  &__logo{
+    display: block;
+    padding-bottom: 20px;
+    img{
+      max-width: 180px;
+    }
+  }
+  .button{
+    min-width: 180px;
+  }
+  p{
+    color: #222222;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    a{
+      color: #62bc7c;
+    }
+  }
 }
 
 .clear {clear: both;height: 0;overflow: hidden;}
@@ -354,3 +396,10 @@ min-height: 100vh;
    margin-top: 0;
   }
 } 
+
+.fancybox-is-open .fancybox-bg{
+  opacity: 0.44;
+}
+.fancybox-close-small svg{
+  color: #ee7724;
+}
