@@ -385,6 +385,12 @@ h6 {
   .button span, .button img, .button i {
     position: relative;
     z-index: 2; }
+  .button.disabled {
+    background-image: linear-gradient(to right, #dfdfdf 0%, #dddddd 100%);
+    box-shadow: none;
+    color: #555555; }
+    .button.disabled:hover {
+      color: #fff; }
   .button:hover {
     box-shadow: 0 0 10px rgba(236, 130, 56, 0.31);
     background-image: linear-gradient(to right, #ee7522 0%, #eeab54 100%); }
@@ -402,6 +408,10 @@ input[type=text], input[type=email], input[type=tel], input[type=search], input[
   border: none;
   border-radius: 23px;
   resize: none; }
+  @media only screen and (max-width: 575px) {
+    input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea, select {
+      height: 36px;
+      border-radius: 10px; } }
   input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=search]:focus, input[type=password]:focus, input[type=date]:focus, input[type=url]:focus, textarea:focus, select:focus {
     box-shadow: 0 0 2px #f5ab78; }
   input[type=text].red_input, input[type=email].red_input, input[type=tel].red_input, input[type=search].red_input, input[type=password].red_input, input[type=date].red_input, input[type=url].red_input, textarea.red_input, select.red_input {
@@ -544,6 +554,10 @@ select {
 @media only screen and (min-width: 992px) {
   .contact-page .wrapper {
     background-size: auto 1040px; } }
+
+@media only screen and (min-width: 992px) {
+  .forgot-page .wrapper {
+    background-size: 100% 690px; } }
 
 .inner-page.event-page .main, .event-page .main {
   padding-top: 0;
@@ -1440,6 +1454,85 @@ select {
   @media only screen and (max-width: 767px) {
     .events-text__nav {
       margin-left: -10px; } }
+
+.registration {
+  padding-top: 22px;
+  color: #222222;
+  font-size: 18px;
+  font-weight: 300; }
+  @media only screen and (max-width: 575px) {
+    .registration {
+      font-size: 12px; } }
+  .registration__input {
+    width: 100%;
+    position: relative; }
+    .registration__input input, .registration__input select {
+      width: 100%; }
+      .registration__input input.error, .registration__input select.error {
+        box-shadow: 0 0 5px rgba(224, 33, 33, 0.77);
+        border: 1px solid rgba(229, 22, 22, 0.36); }
+      @media only screen and (max-width: 575px) {
+        .registration__input input, .registration__input select {
+          font-size: 12px; } }
+    .registration__input div.error {
+      position: absolute;
+      bottom: -25px;
+      padding-top: 0; }
+  .registration__row {
+    margin-bottom: 30px; }
+    @media only screen and (max-width: 992px) {
+      .registration__row {
+        margin-bottom: 0; }
+        .registration__row > .col-lg-6 {
+          margin-bottom: 30px; } }
+    @media only screen and (max-width: 992px) and (max-width: 575px) {
+      .registration__row > .col-lg-6 {
+        margin-bottom: 20px; } }
+  .registration__ext {
+    margin-bottom: 20px;
+    display: block; }
+  .registration__button {
+    padding-top: 20px; }
+    @media only screen and (max-width: 767px) {
+      .registration__button {
+        text-align: center; } }
+    .registration__button .button {
+      margin-right: 40px;
+      border-radius: 2px;
+      min-width: 160px; }
+      @media only screen and (max-width: 767px) {
+        .registration__button .button {
+          margin-right: 5px;
+          margin-left: 5px;
+          min-width: 10px;
+          font-size: 14px; } }
+
+div.error {
+  color: #da4646;
+  font-size: 14px;
+  padding: 10px 0 0 15px; }
+
+.registration__title {
+  background: #eeeeee;
+  padding: 12px;
+  color: #363636;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px; }
+  @media only screen and (max-width: 992px) {
+    .registration__title {
+      margin-bottom: 20px;
+      margin-top: 10px;
+      font-size: 16px; } }
+
+.forgot-form {
+  padding-top: 180px;
+  padding-bottom: 180px; }
+  .forgot-form .error {
+    color: #dd5415; }
 
 /*----------end main----------*/
 /*----------footer----------*/

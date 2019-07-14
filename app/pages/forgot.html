@@ -1,0 +1,51 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+{% block bodyclass %} class="forgot-page" {% endblock %}
+{% block content %}
+<!-- banner -->
+<div class="bnr">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6">
+                <h1>Forgot your password?</h1>
+                <article>
+                    <p>No problem. Please enter your email address below,
+                            then check your email for a message that includes 
+                            a link to change your password.</p>
+                </article>
+                <div class="forgot-form">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row align-items-center">
+                                <div class="col-4"><label for="#">e-mail:</label></div>
+                                <div class="col-8">
+                                    <div class="registration__input">
+                                        <input type="text" placeholder="someone@example.com">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row registration__row justify-content-end">
+                        <div class="col-8">
+                            <div class="error">
+                                    We'll send you an email with a link you can click to reset 
+                                    your password.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="registration__button">
+                        <button type="reset" class="button disabled">Cancel</button>
+                        <button type="reset" class="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/password-bg.png" alt="" class="bnr__img bnr__img-no-spacing">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /banner -->
+
+{% endblock %}

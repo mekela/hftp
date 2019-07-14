@@ -1023,7 +1023,95 @@
         margin-left: -10px;
         }
     }
-    
+  .registration{
+    padding-top: 22px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 300;
+    @include mq($max-width: 575px) {
+      font-size: 12px;
+    }
+    &__input{
+      width: 100%;
+      position: relative;
+      input, select{
+        width: 100%;
+        &.error{
+        box-shadow: 0 0 5px rgba(224, 33, 33, 0.77);
+        border: 1px solid rgba(229, 22, 22, 0.36);
+        }
+        @include mq($max-width: 575px) {
+          font-size: 12px;
+        }
+      }
+      div.error{
+        position: absolute;
+        bottom: -25px;
+        padding-top: 0;
+      }
+    }
+    &__row{
+      margin-bottom: 30px;
+      @include mq($max-width: 992px) {
+       margin-bottom: 0;
+       & > .col-lg-6{
+         margin-bottom: 30px;
+         @include mq($max-width: 575px) {
+          margin-bottom: 20px;
+        }
+       }
+      }
+    }
+    &__ext{
+      margin-bottom: 20px;
+      display: block;
+    }
+    &__button{
+      padding-top: 20px;
+      @include mq($max-width: 767px) {
+        text-align: center;
+      }
+      .button{
+        margin-right: 40px;
+        border-radius: 2px;
+        min-width: 160px;
+        @include mq($max-width: 767px) {
+          margin-right: 5px;
+          margin-left: 5px;
+          min-width: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+    div.error{
+      color: #da4646;
+      font-size: 14px;
+      padding: 10px 0 0 15px;
+    }
+  .registration__title{
+    background: #eeeeee;
+    padding: 12px;
+    color: #363636;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    @include mq($max-width: 992px) {
+      margin-bottom: 20px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  }  
+  .forgot-form{
+    padding-top: 180px;
+    padding-bottom: 180px;
+    .error{
+    color: #dd5415;
+    }
+  }
 /*----------end main----------*/	
 
 	

@@ -24,6 +24,14 @@ overflow: hidden;
     position: relative;
     z-index: 2;
   }
+  &.disabled{
+    background-image: linear-gradient(to right, #dfdfdf 0%, #dddddd 100%);
+    box-shadow: none;
+    color: #555555;
+    &:hover{
+      color: #fff;
+    }
+  }
 }
 @mixin button_gradient($button_gradient){
 box-shadow: 0 0 10px rgba(236, 130, 56, 0.31);
@@ -47,6 +55,10 @@ background-image: linear-gradient(to right, #eeab54 0%, #ee7522 100%);
   border: none;
   border-radius: 23px;
   resize:none;
+  @include mq($max-width: 575px) {
+    height: 36px;
+    border-radius: 10px;
+  }
 }
 @mixin input_focus($input_focus){
   box-shadow: 0 0 2px #f5ab78;

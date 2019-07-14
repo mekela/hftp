@@ -1,0 +1,236 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+{% block bodyclass %} class="inner-page" {% endblock %}
+{% block content %}
+<!-- title -->
+<div class="container">
+    <div class="title">
+        <h1>Join - New Visitor Registration</h1>
+    </div>
+</div>
+<!-- /title -->
+<!-- registration -->
+<div class="registration">
+    <div class="container">
+        <div class="registration__title">Personal information</div>
+        <div class="row registration__row">
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"><label for="#">prefix:</label></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"><label for="#">first name</label></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row registration__row">
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"><label for="#">middle name:</label></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"><label for="#">last name:	</label></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row registration__row">
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"><label for="#">organization:	</label></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"><label for="#">title:</label></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <input type="text" class="error">
+                            <div class="error">Required</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="registration__title">Address information</div>
+        <div class="row registration__row">
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"><label for="#">state, postal code:</label></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <select>
+                                <option>Arizona</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row registration__row">
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"><label for="#">country/province:</label></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <select>
+                                <option>UNITED STATES</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="registration__title">Сontact information</div>
+        <div class="row registration__row">
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"><label for="#">phone:</label></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-lg-3"><label for="#" class="registration__ext">ext.:</label></div>
+                    <div class="col-lg-3 col-4">
+                        <div class="registration__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-8">
+                        <div class="registration__input">
+                            <select>
+                                <option>UNITED STATES</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row registration__row">
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"><label for="#">fax:</label></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-lg-3"><label for="#" class="registration__ext">ext.:</label></div>
+                    <div class="col-lg-3 col-4">
+                        <div class="registration__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-8">
+                        <div class="registration__input">
+                            <select>
+                                <option>UNITED STATES</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row registration__row">
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"><label for="#">e-mail:</label></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-4"><label for="#">comm method:</label></div>
+                    <div class="col-8">
+                        <div class="registration__input">
+                            <select>
+                                <option>Please select</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="registration__button">
+            <button type="reset" class="button disabled">Cancel</button>
+            <button type="reset" class="button">Register Now</button>
+        </div>
+    </div>
+</div>
+<!-- /registration -->
+{% endblock %}

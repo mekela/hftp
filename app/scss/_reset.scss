@@ -390,6 +390,13 @@ min-height: 100vh;
     }
   }
 }
+.forgot-page{
+  .wrapper{
+    @include mq($min-width: 992px) {
+      background-size: 100% 690px;
+    }
+  }
+}
 .inner-page.event-page, .event-page{
   .main{
    padding-top: 0;
