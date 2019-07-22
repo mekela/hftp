@@ -1,0 +1,316 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+{% block bodyclass %} class="inner-page" {% endblock %}
+{% block content %}
+<!-- checkout -->
+<div class="checkout">
+    <div class="container">
+        <div class="checkout__logo"><a href="#"><img src="img/logo-checkout.png" alt=""></a></div>
+        <div class="title"><h2>2019 HFTP Leadership Workshop Registration Form</h2></div>
+        <div class="checkout__content">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="checkout__section">
+                        <div class="registration__title">Order Summary</div>
+                        <div class="checkout__inner">
+                            <div class="checkout__table">
+                            <table>
+                                <tr>
+                                    <th>TICKET TYPE</th>
+                                    <th>PRICE</th>
+                                    <th>fee</th>
+                                    <th>QUANTITY</th>
+                                    <th>SUBTOTAL</th>
+                                </tr>
+                                <tr>
+                                    <td><b>VIP Ticket</b>									      		       			    </td>
+                                    <td>$30.00	</td>
+                                    <td>  $2.93	</td>
+                                    <td>1</td>
+                                    <td>$32.93</td>
+                                </tr>
+                                <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sales Tax:		</td>
+                                    <td>$2.31</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Order total:		</td>
+                                    <td>$35.24</td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout__section">
+                        <div class="registration__title">Registration Information</div>
+                        <div class="checkout__inner">
+                            <div class="row registration__row">
+                                <div class="col-lg-6 col-6">
+                                    <strong>Ticket Buyer</strong>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <div class="error text_right">* Required Field</div>
+                                </div>
+                            </div>
+                            <div class="row registration__row">
+                                <div class="col-lg-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-4"><label for="#">First Name:*									       </label></div>
+                                        <div class="col-8">
+                                            <div class="registration__input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-4"><label for="#">Last Name:*</label></div>
+                                        <div class="col-8">
+                                            <div class="registration__input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row registration__row">
+                                <div class="col-lg-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-4"><label for="#">Email Address:*								       </label></div>
+                                        <div class="col-8">
+                                            <div class="registration__input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-4"><label for="#">Cell Phone:*</label></div>
+                                        <div class="col-8">
+                                            <div class="registration__input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row registration__row">
+                                <div class="col-lg-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3 col-4"><label for="#">Confirm Email Address:*								       </label></div>
+                                        <div class="col-lg-9 col-8">
+                                            <div class="registration__input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="row registration__row">
+                                <div class="col-lg-6">
+                                    <strong>Payment</strong>
+                                </div>
+                            </div>
+                            <div class="row registration__row">
+                                <div class="col-lg-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2 col-4"><label for="#">Card:*</label></div>
+                                        <div class="col-lg-10 col-8">
+                                            <div class="registration__input">
+                                               <select>
+                                                   <option>Select a card type</option>
+                                                   <option>Select a card type2</option>
+                                                   <option>Select a card type3</option>
+                                               </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="row registration__row">
+                                <div class="col-lg-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2 col-4"><label for="#">Card Number:* </label></div>
+                                        <div class="col-lg-10 col-8">
+                                            <div class="registration__input">
+                                               <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row registration__row">
+                                <div class="col-lg-8">
+                                    <div class="row align-items-center">
+                                        <div class="col-4"><label for="#">Expiration Date:*</label></div>
+                                        <div class="col-4">
+                                            <div class="registration__input">
+                                               <select>
+                                                   <option>Month</option>
+                                                   <option>Month2</option>
+                                                   <option>Month3</option>
+                                               </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="registration__input">
+                                              <input type="text" placeholder="Year">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-4"><label for="#">CSC*</label></div>
+                                        <div class="col-8">
+                                            <div class="registration__input">
+                                               <input type="text" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4"></div>
+                                        <div class="col-8">
+                                            <div class="form-info"><a href="#">What's this?</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row registration__row">
+                                <div class="col-lg-6">
+                                    <strong>Billing Information</strong>
+                                </div>
+                            </div>
+                            <div class="row registration__row">
+                                <div class="col-lg-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-4"><label for="#">Country:	*									       </label></div>
+                                        <div class="col-8">
+                                            <div class="registration__input">
+                                               <select>
+                                                   <option>United States</option>
+                                                   <option>United States2</option>
+                                                   <option>United States3</option>
+                                               </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-4"><label for="#">Address:*	</label></div>
+                                        <div class="col-8">
+                                            <div class="registration__input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row registration__row">
+                                <div class="col-lg-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-4"><label for="#">Address 2:										       </label></div>
+                                        <div class="col-8">
+                                            <div class="registration__input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-4"><label for="#">City:*		</label></div>
+                                        <div class="col-8">
+                                            <div class="registration__input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row registration__row">
+                                <div class="col-lg-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-4"><label for="#">State:*											       </label></div>
+                                        <div class="col-8">
+                                            <div class="registration__input">
+                                                <select>
+                                                   <option>Florida</option>
+                                                   <option>United States2</option>
+                                                   <option>United States3</option>
+                                               </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-4"><label for="#">Zip Code:*	</label></div>
+                                        <div class="col-8">
+                                            <div class="registration__input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <strong>Additional Terms</strong>
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="checkout__subtitle">Subscribe to our text messages. </p>
+                                </div>
+                            </div>
+                            <article class="checkout__txt">
+                                <p>By submitting your mobile number you are (a) agreeing to receive a confirmation text 
+                                        message and recurring Amplify promotional messages from an automated telephone 
+                                        dialing system, and (b) confirming that you have read and accept Amplify's Terms of 
+                                        Service and Privacy Policy (bit.ly/subterms). Consent is not a condition of purchase. 
+                                        Msg&Data rates may apply. Text STOP  to opt out.</p>
+                            </article>
+                            <label class="checkout__checkbox">
+                                <input type="checkbox">
+                                <span>I agree to the above additional terms </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="checkout__terms">
+                            I accept the <a href="#">terms of service</a> and have read the <a href="#">privacy policy.</a> I agree that Eventbrite may share my information with the event organizer.
+                    </div>
+                    <div class="registration__button">
+                        <button type="reset" class="button">PAY NOW</button>
+                        <span class="payments"><img src="img/payments.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <aside class="checkout__sidebar">
+                    <div class="checkout__section">
+                        <div class="registration__title">When & Where</div>
+                        <div class="checkout__inner">
+                            <ul>
+                                <li>October 22, 2019</li>
+                                <li>Rosen Centre Hotel</li>
+                                <li>Orlando, Florida, USA</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /checkout -->
+{% endblock %}

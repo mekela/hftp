@@ -410,6 +410,10 @@ input[type=text], input[type=email], input[type=tel], input[type=search], input[
   resize: none; }
   @media only screen and (max-width: 575px) {
     input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea, select {
+      padding-left: 5px;
+      padding-right: 5px; } }
+  @media only screen and (max-width: 575px) {
+    input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea, select {
       height: 36px;
       border-radius: 10px; } }
   input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=search]:focus, input[type=password]:focus, input[type=date]:focus, input[type=url]:focus, textarea:focus, select:focus {
@@ -1533,6 +1537,117 @@ div.error {
   padding-bottom: 180px; }
   .forgot-form .error {
     color: #dd5415; }
+
+.checkout__logo {
+  padding-bottom: 15px; }
+
+.checkout .title h2 {
+  font-size: 30px;
+  font-weight: 400; }
+
+.checkout__content {
+  padding-top: 35px; }
+  .checkout__content .registration__title {
+    color: #363636;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 992px) {
+      .checkout__content .registration__title {
+        margin-top: 0; } }
+  .checkout__content .registration__button {
+    padding-bottom: 30px; }
+    .checkout__content .registration__button .button {
+      vertical-align: middle; }
+  @media only screen and (max-width: 992px) {
+    .checkout__content .registration__row > .col-lg-12, .checkout__content .registration__row > .col-lg-8 {
+      margin-bottom: 30px; } }
+
+.checkout__section {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  margin-bottom: 25px; }
+  .checkout__section .error.text_right {
+    padding-top: 0; }
+
+.checkout__sidebar .checkout__section {
+  background: #f8f8f8;
+  border: none; }
+
+.checkout__table {
+  margin-left: -20px;
+  margin-right: -20px;
+  position: relative; }
+  @media only screen and (max-width: 767px) {
+    .checkout__table {
+      overflow-x: auto; } }
+
+.checkout__inner {
+  padding: 0 20px 20px 20px;
+  color: #363636;
+  font-size: 14px;
+  font-weight: 300; }
+  .checkout__inner th {
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0 20px; }
+    .checkout__inner th:last-child, .checkout__inner th:nth-child(4) {
+      text-align: center; }
+  .checkout__inner td {
+    padding: 14px 20px; }
+    .checkout__inner td:last-child, .checkout__inner td:nth-child(4) {
+      text-align: center; }
+  .checkout__inner tfoot {
+    border-top: 1px solid rgba(0, 0, 0, 0.18); }
+    .checkout__inner tfoot td {
+      font-weight: 500;
+      padding: 8px 0; }
+      .checkout__inner tfoot td:nth-child(4) {
+        text-align: right; }
+
+.checkout__txt {
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  opacity: 0.49;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 300; }
+
+.checkout p.checkout__subtitle {
+  color: rgba(34, 34, 34, 0.5);
+  font-size: 18px;
+  font-weight: 300;
+  padding: 25px 0 10px 0; }
+
+.checkout .checkout__checkbox {
+  color: #4b4b4b;
+  font-size: 16px;
+  font-weight: 300; }
+  .checkout .checkout__checkbox input {
+    margin-right: 5px; }
+
+.checkout__terms {
+  color: #737373;
+  font-size: 13px;
+  font-weight: 300;
+  padding-bottom: 20px; }
+  .checkout__terms a {
+    color: #52b783; }
+
+.form-info {
+  color: #7cc370;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 10px; }
+
+.payments {
+  vertical-align: middle; }
+  .payments img {
+    vertical-align: middle; }
 
 /*----------end main----------*/
 /*----------footer----------*/
