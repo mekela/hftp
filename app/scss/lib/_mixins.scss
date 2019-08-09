@@ -28,8 +28,23 @@ overflow: hidden;
     background-image: linear-gradient(to right, #dfdfdf 0%, #dddddd 100%);
     box-shadow: none;
     color: #555555;
+   
     &:hover{
       color: #fff;
+    }
+  }
+  &.empty{
+    border: 1px solid #ee812d;
+    background: none;
+    color: #ee7824;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: none;
+    &:hover{
+      color: #fff;
+    }
+    i{
+      padding-right: 5px;
     }
   }
 }

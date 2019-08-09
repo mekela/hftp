@@ -391,6 +391,17 @@ h6 {
     color: #555555; }
     .button.disabled:hover {
       color: #fff; }
+  .button.empty {
+    border: 1px solid #ee812d;
+    background: none;
+    color: #ee7824;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: none; }
+    .button.empty:hover {
+      color: #fff; }
+    .button.empty i {
+      padding-right: 5px; }
   .button:hover {
     box-shadow: 0 0 10px rgba(236, 130, 56, 0.31);
     background-image: linear-gradient(to right, #ee7522 0%, #eeab54 100%); }
@@ -457,19 +468,29 @@ select {
     font-weight: 600;
     text-align: center; }
   .modal input {
-    width: 370px;
+    min-width: 370px;
     max-width: 100%; }
+    @media only screen and (max-width: 767px) {
+      .modal input {
+        min-width: 100%; } }
   .modal__form-item {
     padding-bottom: 15px; }
     .modal__form-item:last-child {
       padding-bottom: 0; }
+    .modal__form-item input {
+      width: 100%; }
   .modal__logo {
     display: block;
     padding-bottom: 20px; }
     .modal__logo img {
       max-width: 180px; }
   .modal .button {
-    min-width: 180px; }
+    min-width: 180px;
+    height: 100%; }
+  .modal a.button {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .modal p {
     color: #222222;
     font-size: 18px;
@@ -572,6 +593,15 @@ select {
 
 .fancybox-close-small svg {
   color: #ee7724; }
+
+.event-popup__img {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .event-popup__img img {
+    width: 100%; }
+
+.event-popup__buttons .button {
+  text-transform: none; }
 
 /*----------header----------*/
 .header {
