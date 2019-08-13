@@ -356,6 +356,11 @@ select{
       color: #62bc7c;
     }
   }
+  .events-text{
+    a.button{
+      display: inline-block;
+    }
+  }
 }
 
 .clear {clear: both;height: 0;overflow: hidden;}

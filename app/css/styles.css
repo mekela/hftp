@@ -498,6 +498,8 @@ select {
     line-height: 1.5; }
     .modal p a {
       color: #62bc7c; }
+  .modal .events-text a.button {
+    display: inline-block; }
 
 .clear {
   clear: both;
