@@ -1,0 +1,79 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+{% block bodyclass %} class="inner-page" {% endblock %}
+{% block content %}
+<!-- title -->
+<div class="container">
+    <div class="title text_center">
+        <h1>Blog</h1>
+    </div>
+</div>
+<!-- /title -->
+<!-- top -->
+<div class="container">
+    <div class="blog-top">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="blog-top__img"><img src="img/blog-img.jpg" alt=""></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="blog-top__content">
+                    <h4><a href="#">Lorem ipsum dolor sit amet 
+                        consectetur adipiscing elit</a></h4>
+                    <div class="blog-top__info">
+                        <a href="#">by admin</a> | july 17,2019
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <a href="#" class="button">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /top -->
+<!-- content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="blog-content">
+                <figure class="blog-content__img">
+                    <img src="img/blog-img.jpg" alt="">
+                    <span>People</span>
+                </figure>
+                <h1>Lorem ipsum dolor sit amet consectetur adipiscing elit</h1>
+                <div class="blog-top__info">
+                    <div class="row">
+                        <div class="col-7">
+                                <a href="#">by admin</a> | july 17,2019
+                        </div>
+                        <div class="col-5 text_right">
+                            <span><i class="fas fa-eye"></i> 1988</span>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="blog-content__share">
+                    <img src="img/share.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="blog-sidebar-title">Popular posts</div>
+            <div class="blog-sidebar-posts">
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor sit amet consectet
+                            ur adipiscing elit</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet consectet
+                            ur adipiscing elit</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet consectet
+                            ur adipiscing elit</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet consectet
+                            ur adipiscing elit</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /content -->
+
+{% endblock %}

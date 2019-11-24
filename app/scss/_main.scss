@@ -473,6 +473,16 @@
         font-size: 24px;
        }
     }
+    &.text_center{
+      width: 100%;
+      padding-bottom: 30px;
+      h1,h2,h3{
+        text-align: center;
+        &:after{
+          margin: 0 auto;
+        }
+      }
+    }
   }
   .news-logos{
     &__inner{
@@ -1245,6 +1255,118 @@
     vertical-align: middle;
     img{
       vertical-align: middle;
+    }
+  }
+
+  //blog
+  .blog-top{
+    padding-bottom: 75px;
+    
+    position: relative;
+    &__img{
+      display: block;
+    }
+    &__content{
+      box-shadow: 0 0 16px rgba($color: #000000, $alpha: .2);
+      background: #fff;
+      position: relative;
+      z-index: 5;
+      padding: 20px;
+      color: #353535;
+      font-size: 15px;
+      h4{
+        padding-bottom: 12px;
+        font-size: 30px;
+        color: #1f1f1f;
+        line-height: 1.2;
+        @include mq($max-width: 767px) {
+          font-size: 24px;
+        }
+        a{
+          text-decoration: none;
+        }
+      }
+      p{
+        padding-bottom: 15px;
+      }
+      .button{
+        background: #ef7623;
+        padding-top: 8px;
+        padding-bottom: 7px;
+        font-size: 16px;
+        &:hover{
+          background: #f28235;
+        }
+      }
+    }
+    &__info{
+      color: #6a6a6a;
+      font-size: 13px;
+      padding-bottom: 14px; 
+      a{
+        color: #ee7522;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .blog-content{
+    color: #353535;
+      font-size: 15px;
+      &__img{
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 15px;
+        img{
+          width: 100%;
+        }
+        span{
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #8ac62d;
+          font-size: 14px;
+          color: #fff;
+          padding: 3px 10px;
+        }
+      }
+      h1, h2{
+        padding-bottom: 12px;
+        font-size: 30px;
+        color: #1f1f1f;
+        line-height: 1.2;
+        @include mq($max-width: 767px) {
+          font-size: 24px;
+        }
+      }
+      p{
+        padding-bottom: 20px;
+      }
+      &__share{
+        padding-bottom: 20px;
+        border-bottom: 2px solid #000;
+        margin-bottom: 30px;
+      }
+  }
+  .blog-sidebar-title{
+    font-size: 24px;
+    color: #292929;
+    padding: 10px 15px;
+    background: #eeeeee;
+    color: #292929;
+    @include mq($max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+  .blog-sidebar-posts{
+    padding-bottom: 30px;
+    li{
+      padding: 10px 0;
+      color: #1f1f1f;
+      font-size: 16px;
+      border-bottom: 1px solid #dadada;
     }
   }
 /*----------end main----------*/	
