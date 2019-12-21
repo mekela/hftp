@@ -402,6 +402,12 @@ h6 {
       color: #fff; }
     .button.empty i {
       padding-right: 5px; }
+  .button.button-sm {
+    font-size: 14px;
+    padding: 0.8em 1.8em; }
+    @media only screen and (max-width: 767px) {
+      .button.button-sm {
+        font-size: 12px; } }
   .button:hover {
     box-shadow: 0 0 10px rgba(236, 130, 56, 0.31);
     background-image: linear-gradient(to right, #ee7522 0%, #eeab54 100%); }
@@ -1177,9 +1183,9 @@ select {
     border: 1px solid #ee7522;
     display: flex; }
   .certification__img {
-    width: 59px;
-    background: url(../img/certification-bg.png) no-repeat center;
-    background-size: cover;
+    min-width: 59px;
+    max-width: 59px;
+    background: url(../img/pattern.png) repeat-y top center, linear-gradient(to bottom, #4eab7b 0%, #81c56e 100%);
     margin: -7px 13px -7px 6px;
     position: relative; }
   .certification__text {
@@ -1202,6 +1208,20 @@ select {
         text-decoration: none; }
         .certification__text h5 a:hover, .certification__text h6 a:hover {
           text-decoration: underline; }
+    .certification__text h5 {
+      text-transform: none; }
+    .certification__text p {
+      padding-bottom: 20px; }
+  .certification__text-form {
+    padding: 20px 0 0 0; }
+    .certification__text-form label {
+      padding-bottom: 20px;
+      display: block; }
+      .certification__text-form label img {
+        vertical-align: middle;
+        margin: 0 10px 0 0; }
+    .certification__text-form input {
+      width: 100%; }
   .certification__logos {
     display: flex;
     padding: 20px 0 50px 0;
@@ -1779,6 +1799,48 @@ div.error {
     color: #1f1f1f;
     font-size: 16px;
     border-bottom: 1px solid #dadada; }
+
+.bnr__buttons-job a.button {
+  width: auto; }
+
+.bnr h1.job-title {
+  padding-bottom: 20px; }
+  .bnr h1.job-title:after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f5ab78;
+    display: block;
+    margin-top: 15px; }
+    @media only screen and (max-width: 992px) {
+      .bnr h1.job-title:after {
+        margin: 0 auto;
+        margin-top: 15px; } }
+
+.pager {
+  text-align: right; }
+  @media only screen and (max-width: 767px) {
+    .pager {
+      text-align: center; } }
+  .pager li {
+    display: inline-block;
+    padding: 0 3px; }
+    .pager li a {
+      width: 33px;
+      height: 33px;
+      color: rgba(104, 104, 104, 0.8);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 33px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      background-color: #eaeaea; }
+      .pager li a:hover, .pager li a.active {
+        background: #54ae7a;
+        color: #fff; }
+      .pager li a i {
+        font-size: 0.8em; }
 
 /*----------end main----------*/
 /*----------footer----------*/

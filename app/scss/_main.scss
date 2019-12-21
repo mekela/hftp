@@ -674,9 +674,10 @@
       display: flex;
     }
     &__img{
-      width: 59px;
-      background: url(../img/certification-bg.png) no-repeat center ;
-      background-size: cover;
+      min-width: 59px;
+      max-width: 59px;
+      background: url(../img/pattern.png) repeat-y top center, linear-gradient(to bottom, #4eab7b 0%,#81c56e 100%) ;
+      //background-size: cover;
       margin: -7px 13px -7px 6px;
       position: relative;
     }
@@ -702,6 +703,26 @@
             text-decoration: underline;
           }
         }
+      }
+      h5{
+        text-transform: none;
+      }
+      p{
+        padding-bottom: 20px;
+      }
+    }
+    &__text-form{
+      padding: 20px 0 0 0;
+      label{
+        padding-bottom: 20px;
+        display: block;
+        img{
+          vertical-align: middle;
+          margin: 0 10px 0 0;
+        }
+      }
+      input{
+        width: 100%;
       }
     }
     &__logos{
@@ -1367,6 +1388,55 @@
       color: #1f1f1f;
       font-size: 16px;
       border-bottom: 1px solid #dadada;
+    }
+  }
+  .bnr__buttons-job{
+    a.button{
+      width: auto;
+    }
+  }
+  .bnr h1.job-title{
+    padding-bottom: 20px;
+    &:after{
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: #f5ab78;
+      display: block;
+      margin-top: 15px;
+      @include mq($max-width: 992px) {
+        margin: 0 auto;
+        margin-top: 15px;
+      }
+    }
+  }
+  .pager{
+    text-align: right;
+    @include mq($max-width: 767px) {
+      text-align: center;
+    }
+    li{
+      display: inline-block;
+      padding: 0 3px;
+      a{
+        width: 33px;
+        height: 33px;
+        color: rgba($color: #686868, $alpha: .8);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 33px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        background-color: #eaeaea;
+        &:hover, &.active{
+          background: #54ae7a;
+          color: #fff;
+        }
+        i{
+          font-size: 0.8em;
+        }
+      }
     }
   }
 /*----------end main----------*/	

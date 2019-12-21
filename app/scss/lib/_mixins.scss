@@ -47,6 +47,13 @@ overflow: hidden;
       padding-right: 5px;
     }
   }
+  &.button-sm{
+    font-size: 14px;
+    padding: 0.8em 1.8em;
+    @include mq($max-width: 767px) {
+      font-size: 12px;
+    }
+  }
 }
 @mixin button_gradient($button_gradient){
 box-shadow: 0 0 10px rgba(236, 130, 56, 0.31);
